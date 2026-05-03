@@ -4,8 +4,6 @@ const appState = {
   intervalId: null,
   isRunning: false,
 };
-
-// ---------- HELPERS ----------
 function getTime() {
   return new Date().toTimeString().slice(0, 8);
 }
@@ -17,8 +15,6 @@ function random(list) {
 function rand(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-
-// ---------- PACKET ----------
 function buildPacket() {
   appState.packetNo++;
 
@@ -46,8 +42,6 @@ function buildPacket() {
     size: rand(64, 1500),
   };
 }
-
-// ---------- UI ----------
 function appendRow(p) {
   const tbody = document.getElementById("table-body");
 
@@ -75,7 +69,6 @@ function appendRow(p) {
   tbody.appendChild(row);
 }
 
-// ---------- LOG ----------
 function logActivity(text) {
   const logBox = document.getElementById("log-box");
 
@@ -84,8 +77,6 @@ function logActivity(text) {
 
   logBox.prepend(div);
 }
-
-// ---------- STATS ----------
 function updateStats() {
   let tcp = 0, udp = 0, icmp = 0, totalSize = 0;
 
@@ -107,8 +98,6 @@ function updateStats() {
 
   document.getElementById("stat-avg").textContent = avg + " B";
 }
-
-// ---------- CONTROL ----------
 function startMonitoring() {
   if (appState.isRunning) return;
 
@@ -157,8 +146,6 @@ function clearAll() {
   updateStats();
   logActivity("Data cleared");
 }
-
-// ---------- FILTER ----------
 function applyFilter() {
   const proto = document.getElementById("filter-proto").value;
   const src = document.getElementById("filter-src").value.toLowerCase();
