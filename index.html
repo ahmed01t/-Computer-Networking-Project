@@ -8,18 +8,13 @@
 </head>
 <body>
  
-  <!-- ══════════════════════════════════════
-       HEADER
-  ══════════════════════════════════════ -->
   <header>
     <h1> Network Traffic Monitor</h1>
     <span id="status-badge">● IDLE</span>
   </header>
  
   <main>
- 
-    <!-- ── 1. CONTROLS ── -->
-    <div class="card">
+     <div class="card">
       <div class="section-title">Controls</div>
       <div class="controls">
         <button id="btn-start" onclick="startMonitoring()">▶ Start Monitoring</button>
@@ -27,9 +22,7 @@
         <button id="btn-clear" onclick="clearAll()">✕ Clear Data</button>
       </div>
     </div>
- 
-    <!-- ── 2. STATISTICS ── -->
-    <div class="card">
+     <div class="card">
       <div class="section-title">Basic Statistics</div>
       <div class="stats-row">
         <div class="stat-box">
@@ -54,9 +47,7 @@
         </div>
       </div>
     </div>
- 
-    <!-- ── 3. FILTERS ── -->
-    <div class="card">
+     <div class="card">
       <div class="section-title">Filter Traffic</div>
       <div class="filter-row">
  
@@ -85,7 +76,6 @@
       </div>
     </div>
  
-    <!-- ── 4. PACKET TABLE ── -->
     <div class="card">
       <div class="section-title">Packet Log</div>
       <div class="table-wrapper">
@@ -111,9 +101,7 @@
         </table>
       </div>
     </div>
- 
-    <!-- ── 5. ACTIVITY LOG ── -->
-    <div class="card">
+     <div class="card">
       <div class="section-title">Activity Log</div>
       <div id="log-box"></div>
     </div>
