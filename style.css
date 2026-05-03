@@ -30,9 +30,7 @@ body {
   line-height: 1.5;
 }
 
-/* =========================
-   Header
-========================= */
+
 header {
   background: rgba(17, 26, 43, 0.92);
   backdrop-filter: blur(10px);
@@ -68,9 +66,6 @@ header h1 {
   color: var(--accent);
 }
 
-/* =========================
-   Layout
-========================= */
 main {
   padding: 24px;
   max-width: 1400px;
@@ -107,9 +102,7 @@ main {
   border-radius: 2px;
 }
 
-/* =========================
-   Buttons
-========================= */
+
 .controls {
   display: flex;
   gap: 12px;
@@ -168,9 +161,6 @@ button:disabled {
   box-shadow: 0 8px 18px rgba(96, 165, 250, 0.16);
 }
 
-/* =========================
-   Stats
-========================= */
 .stats-row {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -211,9 +201,7 @@ button:disabled {
   color: var(--danger);
 }
 
-/* =========================
-   Filter Row
-========================= */
+
 .filter-row {
   display: flex;
   gap: 12px;
@@ -255,9 +243,7 @@ button:disabled {
   background: rgba(15, 23, 38, 1);
 }
 
-/* =========================
-   Table
-========================= */
+
 .table-wrapper {
   overflow-x: auto;
   max-height: 380px;
@@ -301,9 +287,7 @@ tbody td {
   color: #d7e3f4;
 }
 
-/* =========================
-   Badges
-========================= */
+
 .badge {
   display: inline-block;
   padding: 4px 10px;
